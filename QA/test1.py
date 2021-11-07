@@ -19,7 +19,7 @@ a = audiobusio.I2SOut(board.IO45, board.IO35, board.IO41)
 
 while True:
     uart.write(bytearray(b'Hello from UART'))
-    print("Hell from USB")
+    print("Hello from USB")
     led.value = True
     time.sleep(2)
     led.value = False
