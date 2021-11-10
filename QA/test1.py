@@ -12,7 +12,7 @@ import audiobusio
 import audiocore
 import digitalio
 
-uart = busio.UART(board.IO43, board.IO44, baudrate=9600)
+uart = busio.UART(board.IO43, board.IO44, baudrate=115200)
 led = digitalio.DigitalInOut(board.IO42)
 led.direction = digitalio.Direction.OUTPUT
 a = audiobusio.I2SOut(board.IO45, board.IO35, board.IO41)
